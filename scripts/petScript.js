@@ -19,7 +19,7 @@ setInterval(function(){
 }, 1000/FPS);
 
 function start(){
-    gContext.fillStyle = '#DCD6D6';
+    gContext.fillStyle = '#444444';//'#DCD6D6';
     gContext.fillRect(0, 0, canvas.width, canvas.height);
 }
 
