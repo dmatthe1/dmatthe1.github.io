@@ -18,6 +18,19 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  
+}
+
+canvas {
+  border:1px solid #000000
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* Styling for Buttons */
 .button {
   background-color: #E98074;
