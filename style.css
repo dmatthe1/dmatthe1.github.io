@@ -33,7 +33,7 @@ canvas {
 }
 
 /* Styling for Buttons */
-.button {
+button {
   background-color: #E98074;
   color: #FFFFFF !important;
 
@@ -47,4 +47,8 @@ canvas {
   font-size: 16px;
 
   cursor: pointer;
+}
+
+button:hover {
+  background: lightsalmon; 
 }
