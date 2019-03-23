@@ -27,7 +27,8 @@ h2 {
 }
 
 canvas {
-  border:5px solid #444444
+  border-width: 5px;
+  border-color: #444444
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
