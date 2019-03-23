@@ -1,4 +1,4 @@
-let canvas = document.getElementById("playCenter");
+let canvas = document.getElementById("petCenter");
 let gContext = canvas.getContext("2d");
 
 let hunger = 100;
@@ -31,6 +31,7 @@ function draw(){
 
 }
 
+/*
 let train = document.createElement("button");
 train.innerHTML = "Train";
 let battle = document.createElement("button");
@@ -57,4 +58,4 @@ frolick.addEventListener ("click", function() {
     //alert("did something");
     //Move to frolick mode
 });
-
+*/
