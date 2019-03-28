@@ -4,6 +4,8 @@ let context = canvas.getContext("2d");
 let hunger = 100;
 let movement = 5;
 
+let keys = [];
+
 let tamagochi = {
     x: canvas.width/2,
     y: canvas.height/2,
