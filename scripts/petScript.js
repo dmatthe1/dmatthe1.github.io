@@ -30,6 +30,12 @@ function update(){
 }
 
 function draw(){
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  playerControls();
+  drawPet();
+}
+
+function drawPet() {
   gContext.beginPath();
   gContext.arc(tamagochi.x, tamagochi.y, 50, 0, 2 * Math.PI);
   gContext.stroke();
