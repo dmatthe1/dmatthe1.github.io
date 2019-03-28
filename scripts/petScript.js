@@ -31,8 +31,16 @@ function update(){
 
 function draw(){
   gContext.beginPath();
-  gContext.arc(100, 75, 50, 0, 2 * Math.PI);
+  gContext.arc(tamagochi.x, tamagochi.y, 50, 0, 2 * Math.PI);
   gContext.stroke();
+}
+
+function tamagochiControls() {
+  //tamagochi Movement
+  if (keys[38]) if (tamagochi.y - tamagochi.height/2 - movement > 0) tamagochi.y -= movement;
+  if (keys[40]) if (tamagochi.y + tamagochi.height/2 + movement < canvas.height) tamagochi.y += movement;
+  if (keys[37]) if (tamagochi.x - tamagochi.width/2 - movement > 0) tamagochi.x -= movement;
+  if (keys[39]) if (tamagochi.x + tamagochi.width/2 + movement < canvas.width) tamagochi.x += movement;
 }
 
 /*
