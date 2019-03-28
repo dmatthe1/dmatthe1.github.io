@@ -13,6 +13,8 @@ let tamagochi = {
 
 let FPS = 30;
 
+start();
+
 setInterval(function(){
     update();
     draw();
