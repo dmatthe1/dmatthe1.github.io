@@ -24,11 +24,13 @@ function start(){
 }
 
 function update(){
-    
+
 }
 
 function draw(){
-
+  gContext.beginPath();
+  gContext.arc(100, 75, 50, 0, 2 * Math.PI);
+  gContext.stroke();
 }
 
 /*
