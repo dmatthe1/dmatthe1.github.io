@@ -36,6 +36,12 @@ canvas {
   display: block;
 }
 
+div.relative {
+  position: relative;
+  top: 100px;
+  border: 3px solid #73AD21;
+}
+
 /* Styling for Buttons */
 button {
   background-color: #E98074;
