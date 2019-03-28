@@ -35,7 +35,7 @@ function draw(){
 
   context.fillStyle = '#444444';
 
-  playerControls();
+  tamagochiControls();
   drawPet();
   console.log(tamagochi.x + " " + tamagochi.y);
 }
