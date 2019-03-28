@@ -1,5 +1,5 @@
 let canvas = document.getElementById("petCenter");
-let gContext = canvas.getContext("2d");
+let context = canvas.getContext("2d");
 
 let hunger = 100;
 let movement = 5;
@@ -21,8 +21,8 @@ setInterval(function(){
 }, 1000/FPS);
 
 function start(){
-    gContext.fillStyle = '#444444';//'#DCD6D6';
-    gContext.fillRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = '#444444';//'#DCD6D6';
+    context.fillRect(0, 0, canvas.width, canvas.height);
 }
 
 function update(){
@@ -30,16 +30,20 @@ function update(){
 }
 
 function draw(){
-  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = '#FFFFFF';//'#DCD6D6';
+  context.fillRect(0, 0, canvas.width, canvas.height);
+
+  context.fillStyle = '#444444';
+
   playerControls();
   drawPet();
   console.log(tamagochi.x + " " + tamagochi.y);
 }
 
 function drawPet() {
-  gContext.beginPath();
-  gContext.arc(tamagochi.x, tamagochi.y, 50, 0, 2 * Math.PI);
-  gContext.stroke();
+  context.beginPath();
+  context.arc(tamagochi.x, tamagochi.y, 50, 0, 2 * Math.PI);
+  context.stroke();
 }
 
 function tamagochiControls() {
